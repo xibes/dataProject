@@ -1,0 +1,22 @@
+[project]
+name = "dataproject"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "faker>=40.44.0",
+    "pyarrow>=26.0.1",
+    "requests>=2.34.2",
+]
+    
+[dependency-groups]
+dev = [
+    "faker>=40.44.0",
+    "ipykernel>=6.31.0",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

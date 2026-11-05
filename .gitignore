@@ -27,6 +27,9 @@ htmlcov/
 # Jupyter
 .ipynb_checkpoints/
 
+# Generated data (recreate with: python -m src.ingest --start ... --end ...)
+data/
+
 # Environment variables / secrets
 .env
 .env.*
